@@ -1,13 +1,7 @@
-
 import java.util.Random;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * BellCurveGenerator
  * @author Chet
  */
 public class BellCurveGenerator implements Generator{

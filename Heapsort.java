@@ -1,5 +1,3 @@
-
-//Came from book, modified by Chet Mancini
 /**
  * A wrapper class to perform heapsort.
  */

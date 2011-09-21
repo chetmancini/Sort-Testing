@@ -1,18 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * QuickInsertion.java
- *
- * [Class Information]
- *
- * @author Chet Mancini
- * Wheaton College, COURSE, SEASON YEAR
- * TASK
- * Oct 28, 2008
- */
 public class QuickSortMedianOfThree implements Sorter {
 
     public int[] sort(int[] array){
@@ -35,22 +20,21 @@ public class QuickSortMedianOfThree implements Sorter {
     }
 
 
-    public int partition(int[] array, int p, int r)
-    {
-	int x = array[r]; // x is the pivot
-	int i = p - 1;
-	for (int j = p; j < r; j++) {
-	    if (array[j] <= x) {
-		i++;
-                int swap = array[i];
-                array[i] = array[j];
-                array[j] = swap;
+    public int partition(int[] array, int p, int r){
+	    int x = array[r]; // x is the pivot
+	    int i = p - 1;
+	    for (int j = p; j < r; j++) {
+	      if (array[j] <= x) {
+		      i++;
+          int swap = array[i];
+          array[i] = array[j];
+          array[j] = swap;
+	      }
 	    }
-	}
-	int t = array[i+1];
-	array[i+1] = array[r];
-	array[r] = t;
-	return i + 1;
+	    int t = array[i+1];
+	    array[i+1] = array[r];
+	    array[r] = t;
+	    return i + 1;
     }
 
     public int medianOf3(int[] data, int left, int right) {
@@ -95,6 +79,5 @@ public class QuickSortMedianOfThree implements Sorter {
             }
             array[j+1] = value;
         }
-
     }
 }

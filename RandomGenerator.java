@@ -1,13 +1,8 @@
 
 import java.util.Random;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * RandomGenerator
  * @author Chet
  */
 public class RandomGenerator implements Generator{

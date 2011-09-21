@@ -1,10 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * PreSortGenerator
  * @author Chet
  */
 public class PreSortGenerator implements Generator{

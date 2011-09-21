@@ -1,33 +1,5 @@
-
-/************************************************************************
- *
- * 1. This software is for the purpose of demonstrating one of many
- * ways to implement the algorithms in Introduction to Algorithms,
- * Second edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald
- * L. Rivest, and Clifford Stein.  This software has been tested on a
- * limited set of test cases, but it has not been exhaustively tested.
- * It should not be used for mission-critical applications without
- * further testing.
- *
- * 2. McGraw-Hill licenses and authorizes you to use this software
- * only on a microcomputer located within your own facilities.
- *
- * 3. You will abide by the Copyright Law of the United States.
- *
- * 4. You may prepare a derivative version of this software provided
- * that your source code indicates that it is based on this software and
- * also that you have made changes to it.
- *
- * 5. If you believe that you have found an error in this software,
- * please send email to clrs-java-bugs@mhhe.com.  If you have a
- * suggestion for an improvement, please send email to
- * clrs-java-suggestions@mhhe.com.
- *
- ***********************************************************************/
 /**
- * Class for partitioning an array of {@link Comparable} objects.
- * Implements the Partition procedure from page 146 of
- * <i>Introduction to Algorithms</i>, Second edition.
+ * Based on the code from Introduction to Algorithms by Cormen et al.
  */
 public class Partitioner {
 
@@ -51,10 +23,7 @@ public class Partitioner {
         int x = array[r]; // x is the pivot
         int i = p - 1;
 
-        // Maintain the following invariant:
-        //   array[p..i] <= x,
-        //   array[i+1..j-1] > x, and
-        //   array[r] = x.
+        // Maintain the invariant
         for(int j = p; j < r; j++){
             if(array[j] <= x){
                 i++;
@@ -81,9 +50,3 @@ public class Partitioner {
         array[j] = t;
     }
 }
-
-// $Id: Partitioner.java,v 1.1 2003/10/14 16:56:20 thc Exp $
-// $Log: Partitioner.java,v $
-// Revision 1.1  2003/10/14 16:56:20  thc
-// Initial revision.
-//

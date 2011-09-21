@@ -1,10 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * ReverseSortedGenerator
  * @author Chet
  */
 public class ReverseSortedGenerator implements Generator{

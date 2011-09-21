@@ -1,17 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * QuickInsertion.java
- *
- * [Class Information]
- *
- * @author Chet Mancini
- * Wheaton College, COURSE, SEASON YEAR
- * TASK
- * Oct 28, 2008
  */
 public class QuickInsertion implements Sorter {
 
